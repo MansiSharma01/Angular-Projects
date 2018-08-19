@@ -1,0 +1,19 @@
+<form> 
+    <div class="form-group">
+      <label for="sname">User Name: </label>
+  <input required ngModel name="sname" #name="ngModel" id="sname" minlength="5" (change)="LogChange(name)" type="text" class="form-control">
+  <div class="alert alert-danger" *ngIf="!name.valid">Name is compulsory!!</div>
+    </div>  
+  <br>
+    <div class="form-group">
+      <label for="add">Password: </label>
+     <input required ngModel name="add" #add="ngModel" id="add" maxlength="7" (change)="LogChange(add)" type="text" class="form-control">
+    <br>
+
+    </div>
+    <br>
+    <div>
+      <button mat-flat-button>LOgin</button>
+    </div>
+    
+</form>

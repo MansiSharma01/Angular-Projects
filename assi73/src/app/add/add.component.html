@@ -1,0 +1,32 @@
+<form> 
+    <div class="form-group">
+      <label for="sname">Comapny of the Car : </label>
+  <input required ngModel name="sname" #name="ngModel" id="sname" placeholder="Eg.Hyundai" (change)="LogChange(name)" type="text" class="form-control">
+  <div class="alert alert-danger" *ngIf="!name.valid">Name is compulsory!!</div>
+    </div>  
+  <br>
+    <div class="form-group">
+      <label for="add">TYpe: </label>
+     <input required ngModel name="add" #add="ngModel" id="add" placeholder="Eg. Sedan" (change)="LogChange(add)" type="text" class="form-control">
+    <br>
+    
+    <br>
+      <label>Color: </label>
+      <input required ngModel name="cn" #cn="ngModel" id="cn" (change)="LogChange(cn)" type="text" class="form-control">  
+    <br>
+    <br>
+    <label>Car Number: </label>
+      <input required ngModel name="mail" #mail="ngModel" id="mail" (change)="LogChange(mail)" type="text" class="form-control">  
+    <br>
+      <br>
+    <label>No of Seats: </label>
+      <input required ngModel name="bn" #bn="ngModel" id="bn" (change)="LogChange(bn)" type="text" class="form-control">  
+    <br>
+
+    </div>
+    <br>
+    <div>
+      <button mat-flat-button>Submit</button>
+    </div>
+    
+</form>

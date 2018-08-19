@@ -1,0 +1,9 @@
+<h1>TRAVELLING</h1>
+
+<mat-form-field>
+  <mat-select placeholder="Select City" id="x" required>
+    <mat-option *ngFor="let city of cities" [value]="city.value">
+      {{city.viewValue}}
+    </mat-option>
+  </mat-select>
+</mat-form-field>

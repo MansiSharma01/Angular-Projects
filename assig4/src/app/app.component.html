@@ -1,0 +1,14 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+ <h1>
+   PARENT TO CHILD COMMUNICATION
+   <app-p2c [data]="display"></app-p2c>
+ </h1>
+ <h2>
+   CHILD TO PARENT COMMUNICATION
+  </h2>
+ <app-c2p (eve)="msg= $event"></app-c2p>
+ <h3>{{msg}}</h3>
+</div>
+
+
